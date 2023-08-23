@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components {
+    
+    .input-field {
+        @apply bg-white w-fit h-10 px-3 text-black
+        border-[2px] border-gray-300;
+    }
+
+    .button {
+        @apply bg-green-500 hover:bg-green-600 focus:bg-green-400 
+        h-10 text-white px-5 font-semibold text-lg rounded-lg w-fit;
+    }
+
+    .glow-green {
+        @apply bg-green-400;
+        box-shadow: 0 0 10px #39ff10, 0 0 20px #39ff14, 0 0 10px #000, 0 0 40px, 
+                       0 0 50px #39ff14, 0 0 60px #39ff14, 0 0 70px #39ff14;
+    }
+
+    .glow-red {
+        @apply bg-red-400;
+        box-shadow: 0 0 10px #ff3131, 0 0 20px #ff3131, 0 0 30px #000, 0 0 40px, 
+                       0 0 50px #ff3131, 0 0 60px #ff3131, 0 0 70px #ff3131;
+    }
+
+    .glow-amber {
+        @apply bg-amber-300;
+        box-shadow: 0 0 10px #FF5F1F, 0 0 20px #FF5F1F, 0 0 30px #000000, 0 0 40px, 
+                       0 0 50px #FF5F1F, 0 0 60px #FF5F1F, 0 0 70px #FF5F1F;
+    }
+
+    *{
+        font-family: 'Poppins', sans-serif;
+    }
+}
+

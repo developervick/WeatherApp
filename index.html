@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--bootsrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!--fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!--styelsheet-->
+    <link href="style.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+        .bg-img{
+            backdrop-filter: blur(8px) ;
+        }
+    </style>
+
+</head>
+<body class="bg-zinc-900">
+    
+    <!-- Model element--->
+    <div id="model" class="hidden fixed p-2 justify-center items-center text-black rounded-[20px] left-[20%] lg:left-[40%] top-[25%] w-[300px] h-[300px] bg-gray-100 opacity-90 shadow-xl">
+        <button id="cross" class="self-end justify-self-start w-fit"><i class="fa-solid fa-xmark"></i></button>
+        <h3 class="text-2xl font-bold my-2 text-center">Look at our more projects</h3>
+        <button class="button my-2">Check them</button>
+    </div>
+
+    <!--navbar-->
+    <div class="bg-zinc-900 text-white py-2 px-3 shadow-sm">
+        <h2 class="text-4xl mx-5 my-2">WeatherApp</h2>
+    </div>
+
+    <div class="bg-cover" style="background-image: url('peakpx.jpg');">
+    <div class="bg-img grid grid-rows-2 lg:grid-cols-2 m-0 shadow-sm h-full">
+
+        <!---input-->
+            <div class="col-span-1 px-5 my-5 flex justify-around lg:justify-end lg:mr-40">
+                <form class="bg-zinc-800 bg-opacity-60 flex flex-col w-fit p-5 border-2 rounded-lg justify-around text-zinc-300">
+                    <label for="city" class="text-2xl  font-semibold">City Name</label>
+                    <input id="city" class="my-2 input-field rounded-lg text-zinc-600" type="text" placeholder="City name">
+                    <button id="get-weather" class="button my-1">Get Weather</button>
+                </form>
+            </div>
+            <!--output-->
+            <div id="results" class="col-span-1 flex flex-col lg:flex-row justify-start lg:justify-start items-center lg:items-center h-full">
+
+                <h6 class="font-semibold w-fit text-5xl bg-opacity-60 bg-zinc-800 p-3 text-zinc-300 rounded-lg">Temprature: </h6>
+                <span id="temp" class="font-semibold w-fit bg-opacity-60 bg-zinc-800 p-3 my-4 m-2 text-5xl text-zinc-300 rounded-lg">Degree celcious</span>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script type="module" src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
